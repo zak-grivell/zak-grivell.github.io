@@ -1,1 +1,44 @@
 @import 'tailwindcss';
+
+@theme {
+	--font-mono:
+		'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+		'Courier New', monospace;
+
+	--color-ctp-rosewater: #f2d5cf;
+	--color-ctp-flamingo: #eebebe;
+	--color-ctp-pink: #f4b8e4;
+	--color-ctp-mauve: #ca9ee6;
+	--color-ctp-red: #e78284;
+	--color-ctp-maroon: #ea999c;
+	--color-ctp-peach: #ef9f76;
+	--color-ctp-yellow: #e5c890;
+	--color-ctp-green: #a6d189;
+	--color-ctp-teal: #81c8be;
+	--color-ctp-sky: #99d1db;
+	--color-ctp-sapphire: #85c1dc;
+	--color-ctp-blue: #8caaee;
+	--color-ctp-lavender: #babbf1;
+	--color-ctp-text: #c6d0f5;
+	--color-ctp-subtext1: #b5bfe2;
+	--color-ctp-subtext0: #a5adce;
+	--color-ctp-overlay2: #949cbb;
+	--color-ctp-overlay1: #838ba7;
+	--color-ctp-overlay0: #737994;
+	--color-ctp-surface2: #626880;
+	--color-ctp-surface1: #51576d;
+	--color-ctp-surface0: #414559;
+	--color-ctp-base: #303446;
+	--color-ctp-mantle: #292c3c;
+	--color-ctp-crust: #232634;
+}
+
+@layer base {
+	body {
+		@apply bg-ctp-base font-mono text-ctp-text antialiased;
+	}
+
+	::selection {
+		@apply bg-ctp-surface2 text-ctp-rosewater;
+	}
+}
